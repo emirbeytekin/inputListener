@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Input_Listener" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7K-9K-TvW" customClass="EBInput" customModule="Input_Listener" customModuleProvider="target">
+                                <rect key="frame" x="22" y="134" width="370" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="BXk-u5-Uk8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAd-vV-qkN" customClass="EBInput" customModule="Input_Listener" customModuleProvider="target">
+                                <rect key="frame" x="22" y="202" width="370" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="AdM-U6-GYY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g7K-9K-TvW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="4qO-q5-cYn"/>
+                            <constraint firstItem="g7K-9K-TvW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="9wP-bd-Y5Y"/>
+                            <constraint firstItem="BAd-vV-qkN" firstAttribute="leading" secondItem="g7K-9K-TvW" secondAttribute="leading" id="Lgh-Ji-Wku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g7K-9K-TvW" secondAttribute="trailing" constant="22" id="P4q-De-5eH"/>
+                            <constraint firstItem="BAd-vV-qkN" firstAttribute="top" secondItem="g7K-9K-TvW" secondAttribute="bottom" constant="25" id="j26-Iw-pSx"/>
+                            <constraint firstItem="BAd-vV-qkN" firstAttribute="trailing" secondItem="g7K-9K-TvW" secondAttribute="trailing" id="lMN-92-fVa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="input1" destination="g7K-9K-TvW" id="sNN-3f-p0F"/>
+                        <outlet property="input2" destination="BAd-vV-qkN" id="CFu-Dj-WUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
